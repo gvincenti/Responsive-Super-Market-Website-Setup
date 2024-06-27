@@ -1,51 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <title>Super Market Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="navigation__header">
-      <div class="nav__logo">
-        <a href="#"> <span>Logo</span>.</a>
-      </div>
-      <div class="nav__btn" id="menu-btn">
-        <span><i class="ri-menu-2-line"></i></span>
-      </div>
-    </div>
-    <ul class="nav__links" id="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Categories</a></li>
-      <li><a href="#">Promo</a></li>
-    </ul>
-    <div class="nav__btns">
-      <button class="btn sign__up">Sign Up</button>
-      <button class="btn sign__in">Sign In</button>
-    </div>
-  </nav>
-  <!-- Header Container -->
-  <header class="header__container">
-    <div class="header__image">
-      <div class="header__container__image rectangle__container">
-        <img src="./assets/Rectangle.png" height="150px" width="200px" />
-      </div>
-      <div class="header__container__image square__container">
-        <img src="./assets/Square.png" height="42px" width="42px" />
-      </div>
-      <img src="assets/SuperMarket.png" alt="header" />
-    </div>
-  </header>
-  <!-- Images -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="main.js"></script>
-</body>
+    <header>
+        <nav>
+            <div class="logo">LOGO</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#promo">Promo</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button>Sign Up</button>
+                <button>Sign In</button>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Tienda de Ropa</h1>
+                <p>Descubre nuestra colección exclusiva de ropa para todas las ocasiones.</p>
+                <button>Ver más</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/Mantis.png" alt="Hero Image">
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una tienda comprometida en ofrecer lo mejor en moda y estilo para cada temporada.</p>
+        </section>
+
+        <section id="categories" class="categories">
+            <h2>Categorías</h2>
+            <div class="category">
+                <img src="assets/category1.jpg" alt="Category 1">
+                <h3>Categoría 1</h3>
+            </div>
+            <div class="category">
+                <img src="assets/category2.jpg" alt="Category 2">
+                <h3>Categoría 2</h3>
+            </div>
+            <!-- Agregar más categorías según sea necesario -->
+        </section>
+
+        <section id="promo" class="promo">
+            <h2>Promociones</h2>
+            <div class="promo-item">
+                <img src="assets/promo1.jpg" alt="Promo 1">
+                <h3>Promo 1</h3>
+                <p>Descripción de la promoción 1.</p>
+            </div>
+            <div class="promo-item">
+                <img src="assets/promo2.jpg" alt="Promo 2">
+                <h3>Promo 2</h3>
+                <p>Descripción de la promoción 2.</p>
+            </div>
+            <!-- Agregar más promociones según sea necesario -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
 </html>
